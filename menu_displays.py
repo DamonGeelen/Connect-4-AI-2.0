@@ -227,7 +227,7 @@ def post_game_menu():
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RETURN:
-                    return create_board(), False, 0 # User wants to play again
+                    return create_board(), 0 # User wants to play again
                 elif event.key == pygame.K_ESCAPE:
                     sys.exit()  # User wants to exit
         

@@ -14,7 +14,7 @@ difficulty = difficulty_selection()
 draw_board(board)
 
 # Main game loop
-while not game_over:
+while not game_is_over(board):
 
     # Initalize the red piece over board at mouse position
     pygame.draw.rect(screen, BLACK, (0, 0, WINDOW_WIDTH, SQUARE_SIZE))
@@ -72,13 +72,12 @@ while not game_over:
                 if winning_move(board, 1):
                     label = myfont.render("Player 1 Wins!", 1, RED)
                     screen.blit(label, ((WINDOW_WIDTH - label.get_width())/2, 10))
-                    game_over = True
 
                 pygame.time.wait(750)
 
                 # Player 2 (Yellow)
                 # The AI finds the best move.
-                if not game_over:
+                if not game_is_over(board):
                     result = minimax(board, True, difficulty, -float("Inf"), float("Inf"), my_evaluate_board)
                     col = result[1]
                     row = get_next_open_row(board, col)
@@ -101,11 +100,11 @@ while not game_over:
             draw_board(board)
 
             # Check for game over
-            if game_over:
+            if game_is_over(board):
                 pygame.time.wait(3000)
 
                 # Post game menu
-                board, game_over, turn = post_game_menu()
+                board, turn = post_game_menu()
 
                 # Restart game (if user doesn't quit in post game menu)
                 main_menu()

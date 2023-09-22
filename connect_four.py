@@ -106,6 +106,7 @@ def check_win(board, piece, row_delta, col_delta):
 
                 elif board[row + i * row_delta][col + i * col_delta] != piece:
                     break
+
             else:
                 return True
 
@@ -134,6 +135,8 @@ def winning_move(board, piece):
     # Check downward diagonals
     if check_win(board, piece, -1, 1):
         return True
+    
+    return False
 
 
 def board_full(board):
@@ -148,6 +151,8 @@ def board_full(board):
     """
     return not np.any(board == 0)
 
+def game_is_over(board):
+  return winning_move(board, 1) or winning_move(board, 2) or board_full(board)
 
 def draw_board(board):
     """

@@ -21,7 +21,7 @@ def minimax(input_board, is_maximizing, depth, alpha, beta, eval_function):
         list: A list containing the best value and best move for the AI player.
 
     """
-    if game_over or depth == 0:
+    if game_is_over(input_board) or depth == 0:
         return [eval_function(input_board), ""]
     if is_maximizing:
         best_value = -float("Inf")

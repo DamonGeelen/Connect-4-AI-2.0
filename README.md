@@ -31,6 +31,20 @@ To play Connect Four AI 2.0, follow these instructions:
    python3 script.py
    ```
 
-## Credits
+## Contributing
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request. Make sure to follow the existing code style and provide clear documentation for your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as permitted by the license.
+
+## Acknowledgments
 
 This project was inspired by the final assessment in Codecademy's "Machine Learning: Artificial Intelligence Decision Making with Minimax" certificate, which provided the code for the recursive minimax function. However, the code for the AI board evaluation, the main game loop, and all GUI functionality are completely original.
+
+## Contact
+
+If you have any questions or inquiries, you can reach me at damonrobertgeelen@gmail.com.
+
+Happy gaming!

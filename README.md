@@ -8,7 +8,10 @@ Connect Four AI 2.0 is a single-player version of the classic Connect 4 game. It
 
 To get started with Connect Four AI 2.0, follow these steps:
 
-1. Download the project folder from [GitHub Repository](https://github.com/your-username/connect-four-ai-2.0).
+1. Clone this repository to your local machine using the following command:
+   ```
+   git clone https://github.com/damongeelen/connect-four-ai.git
+   ```
 2. Ensure that you have the following prerequisites installed on your system:
    - Python 3 (newest version recommended)
    - NumPy

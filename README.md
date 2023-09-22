@@ -30,4 +30,4 @@ To play Connect Four AI 2.0, follow these instructions:
 
 ## Credits
 
-This project was inspired by the final assessment in Codecademy's "Machine Learning: Artificial Intelligence Decision Making with Minimax" certificate.
+This project was inspired by the final assessment in Codecademy's "Machine Learning: Artificial Intelligence Decision Making with Minimax" certificate, which provided the code for the recursive minimax function. However, the code for the AI board evaluation, the main game loop, and all GUI functionality are completely original.

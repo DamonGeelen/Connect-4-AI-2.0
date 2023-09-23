@@ -19,9 +19,6 @@ RED = (215, 0, 64)
 RED_2 = (108, 0, 32)
 YELLOW = (253, 218, 13)
 
-# Variables
-game_over = False
-
 # Initialize PyGame
 pygame.init()
 

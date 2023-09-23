@@ -152,7 +152,16 @@ def board_full(board):
     return not np.any(board == 0)
 
 def game_is_over(board):
-  return winning_move(board, 1) or winning_move(board, 2) or board_full(board)
+  """
+  Check if the game is over by checking for a winning move or if the board is full.
+  
+  Args:
+    board (list): The game board.
+    
+  Returns:
+    bool: True if the game is over, False otherwise.
+  """
+  return board_full(board) or winning_move(board, 1) or winning_move(board, 2)
 
 def draw_board(board):
     """
